@@ -51,18 +51,15 @@ const App = () => {
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
-        <img src="https://alan.app/voice/images/previews/preview.jpg" className={classes.alanLogo} alt="logo" />
+        <img src="https://voicebot.ai/wp-content/uploads/2019/10/alan.jpg" className={classes.alanLogo} alt="logo" />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
       {!newsArticles.length ? (
         <div className={classes.footer}>
           <Typography variant="body1" component="h2">
-            Created by
-            <a className={classes.link} href="https://www.linkedin.com/in/adrian-hajdin/"> Adrian Hajdin</a> -
-            <a className={classes.link} href="http://youtube.com/javascriptmastery"> JavaScript Mastery</a>
+            Created by : Rishab Yadav & Sumit Raj
           </Typography>
-          <img className={classes.image} src={logo} height="50px" alt="JSMastery logo" />
         </div>
       ) : null}
     </div>
